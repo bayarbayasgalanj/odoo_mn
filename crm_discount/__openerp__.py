@@ -28,6 +28,8 @@
     'description': 'Altan joloo group',
     'depends': ['base','mail'],
     'data': [
+            'security/crm_discount_security.xml',
+            'security/ir.model.access.csv',
             'crm_discount_view.xml',
             'partner_view.xml',
             'menu_view.xml',

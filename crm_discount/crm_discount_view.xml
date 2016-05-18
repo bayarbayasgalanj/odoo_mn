@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
-                    <group col="6">
+                    <group col="4">
                         <field name="partner_id" domain="[('is_discount', '=', True)]"/>
                         <field name="datetime"/>
                         <field name="sale_count"/>
@@ -33,24 +33,28 @@
             </tree>
         </field>
     </record>
-    <!-- <record id="view_crm_discount_filter" model="ir.ui.view">
+    <record id="view_crm_discount_filter" model="ir.ui.view">
         <field name="name">crm.discount.filter</field>
         <field name="model">crm.discount</field>
         <field name="arch" type="xml">
-            <search>
-                <group expand="0">
-                    <filter string="Project" name="group_project_id" domain="[]" context="{'group_by':'project_id'}"/>
-                    <filter string="Year" name="group_year" domain="[]" context="{'group_by':'year'}"/>
-                    <filter string="Month" name="group_month" domain="[]" context="{'group_by':'month'}"/>
+            <search string="Search Partner">
+                <field name="partner_id"/>
+                <separator/>
+                <field name="datetime"/>
+                <separator/>
+                <field name="sale_count"/>
+                <group expand="0" string="Group By">
+                    <filter string="Partner" context="{'group_by': 'partner_id'}"/>
+                    <filter string="Datetime" context="{'group_by': 'datetime'}"/>
                 </group>
             </search>
         </field>
-    </record> -->
+    </record>
     <record id="view_crm_discount_graph" model="ir.ui.view">
             <field name="name">crm.discount.graph</field>
             <field name="model">crm.discount</field>
             <field name="arch" type="xml">
-                <graph type="bar">
+                <graph type="pivot">
                     <field name="partner_id"/>
                     <field name="sale_count" operator="+"/>
                 </graph>

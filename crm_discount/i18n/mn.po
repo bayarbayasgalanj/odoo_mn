@@ -1,0 +1,268 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* crm_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20160421\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-18 03:26+0000\n"
+"PO-Revision-Date: 2016-05-18 03:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: crm_discount
+#: view:crm.discount.car:crm_discount.view_crm_discount_car_tree
+msgid "51-22 УБН"
+msgstr "51-22 УБН"
+
+#. module: crm_discount
+#: model:ir.actions.act_window,help:crm_discount.action_partner_crm_discount
+msgid "<p class=\"oe_view_nocontent_create\">\n"
+"                Click to add a contact in your address book.\n"
+"              </p><p>\n"
+"                Odoo helps you easily track all activities related to\n"
+"                a customer; discussions, history of business opportunities,\n"
+"                documents, etc.\n"
+"              </p>\n"
+"            "
+msgstr "<p class=\"oe_view_nocontent_create\">\n"
+"               Хаягийн дэвтэртээ холбох хаяг үүсгэхдээ дарна уу.\n"
+"              </p><p>\n"
+"                Odoo нь захиалагчтай холбогдох бүх үйл ажиллагааг хялбараар хөтлөхөд тусладаг:\n"
+"                хөөрөлдөөн, бизнесийн боломжийн түүх, баримтууд, гм.\n"
+"              </p>\n"
+"            "
+
+#. module: crm_discount
+#: model:ir.actions.act_window,name:crm_discount.action_crm_discount_car
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_car
+#: field:res.partner,car_ids:0
+msgid "Car"
+msgstr "Машин"
+
+#. module: crm_discount
+#: model:ir.actions.act_window,name:crm_discount.action_crm_discount_card
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_card
+#: field:res.partner,card_ids:0
+msgid "Card"
+msgstr "Карт"
+
+#. module: crm_discount
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_conf
+msgid "Configuration"
+msgstr "Тохиргоо"
+
+#. module: crm_discount
+#: view:res.partner:crm_discount.view_crm_discount_partner_form
+msgid "Contact"
+msgstr "Харилцагч"
+
+#. module: crm_discount
+#: view:res.partner:crm_discount.view_crm_discount_partner_tree
+msgid "Contacts"
+msgstr "Харилцагч"
+
+#. module: crm_discount
+#: field:crm.discount,create_uid:0
+#: field:crm.discount.car,create_uid:0
+#: field:crm.discount.card,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: crm_discount
+#: field:crm.discount,create_date:0
+#: field:crm.discount.car,create_date:0
+#: field:crm.discount.card,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: crm_discount
+#: model:ir.actions.act_window,name:crm_discount.action_crm_discount
+#: model:ir.model,name:crm_discount.model_crm_discount
+#: model:ir.module.category,name:crm_discount.module_category_crm_discount
+#: model:ir.ui.menu,name:crm_discount.main_menu_crm_discount
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_act
+msgid "Crm discount"
+msgstr "Урамшуулал"
+
+#. module: crm_discount
+#: model:res.groups,name:crm_discount.group_crm_discount_manager
+msgid "Crm discount Manager"
+msgstr "Урамшуулал менежер"
+
+#. module: crm_discount
+#: model:ir.model,name:crm_discount.model_crm_discount_car
+msgid "Crm discount car"
+msgstr "Урамшуулал машин"
+
+#. module: crm_discount
+#: model:ir.model,name:crm_discount.model_crm_discount_card
+msgid "Crm discount card"
+msgstr "Урамшуулал карт"
+
+#. module: crm_discount
+#: model:res.groups,name:crm_discount.group_crm_discount_user
+msgid "Crm discount user"
+msgstr "Урамшуулал хэрэглэгч"
+
+#. module: crm_discount
+#: model:ir.actions.act_window,name:crm_discount.action_partner_crm_discount
+msgid "Customers"
+msgstr "Харилцагч"
+
+#. module: crm_discount
+#: help:crm.discount,message_last_post:0
+#: help:crm.discount.car,message_last_post:0
+#: help:crm.discount.card,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "Date of the last message posted on the record."
+
+#. module: crm_discount
+#: view:crm.discount:crm_discount.view_crm_discount_filter
+#: field:crm.discount,datetime:0
+msgid "Datetime"
+msgstr "Огноо"
+
+#. module: crm_discount
+#: field:crm.discount,message_follower_ids:0
+#: field:crm.discount.car,message_follower_ids:0
+#: field:crm.discount.card,message_follower_ids:0
+msgid "Followers"
+msgstr "Followers"
+
+#. module: crm_discount
+#: view:crm.discount:crm_discount.view_crm_discount_filter
+msgid "Group By"
+msgstr "Бүлэглэх"
+
+#. module: crm_discount
+#: help:crm.discount,message_summary:0
+#: help:crm.discount.car,message_summary:0
+#: help:crm.discount.card,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: crm_discount
+#: field:crm.discount,id:0
+#: field:crm.discount.car,id:0
+#: field:crm.discount.card,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: crm_discount
+#: help:crm.discount,message_unread:0
+#: help:crm.discount.car,message_unread:0
+#: help:crm.discount.card,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: crm_discount
+#: field:crm.discount,message_is_follower:0
+#: field:crm.discount.car,message_is_follower:0
+#: field:crm.discount.card,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: crm_discount
+#: field:res.partner,is_discount:0
+msgid "Is discount"
+msgstr "Урамшуулал"
+
+#. module: crm_discount
+#: field:crm.discount,message_last_post:0
+#: field:crm.discount.car,message_last_post:0
+#: field:crm.discount.card,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: crm_discount
+#: field:crm.discount,write_uid:0
+#: field:crm.discount.car,write_uid:0
+#: field:crm.discount.card,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: crm_discount
+#: field:crm.discount,write_date:0
+#: field:crm.discount.car,write_date:0
+#: field:crm.discount.card,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: crm_discount
+#: field:crm.discount,message_ids:0
+#: field:crm.discount.car,message_ids:0
+#: field:crm.discount.card,message_ids:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: crm_discount
+#: help:crm.discount,message_ids:0
+#: help:crm.discount.car,message_ids:0
+#: help:crm.discount.card,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: crm_discount
+#: field:crm.discount,name:0
+#: view:res.partner:crm_discount.view_crm_discount_partner_form
+msgid "Name"
+msgstr "Нэр"
+
+#. module: crm_discount
+#: field:crm.discount.car,name:0
+#: field:crm.discount.card,name:0
+msgid "Number"
+msgstr "Дугаар"
+
+#. module: crm_discount
+#: view:crm.discount:crm_discount.view_crm_discount_filter
+#: field:crm.discount,partner_id:0
+#: model:ir.model,name:crm_discount.model_res_partner
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_partner
+msgid "Partner"
+msgstr "Харилцагч"
+
+#. module: crm_discount
+#: field:res.partner,register:0
+msgid "Register"
+msgstr "Регистр"
+
+#. module: crm_discount
+#: field:crm.discount,sale_count:0
+msgid "Sale count"
+msgstr "Борлуулалтын дүн"
+
+#. module: crm_discount
+#: view:res.partner:crm_discount.view_crm_discount_partner_form
+#: field:res.partner,sale_count:0
+#: field:res.partner,sale_ids:0
+msgid "Sales"
+msgstr "Борлуулалт"
+
+#. module: crm_discount
+#: view:crm.discount:crm_discount.view_crm_discount_filter
+#: view:res.partner:crm_discount.view_crm_discount_res_partner_filter
+msgid "Search Partner"
+msgstr "Харилцагч хайх"
+
+#. module: crm_discount
+#: field:crm.discount,message_summary:0
+#: field:crm.discount.car,message_summary:0
+#: field:crm.discount.card,message_summary:0
+msgid "Summary"
+msgstr "Summary"
+
+#. module: crm_discount
+#: field:crm.discount,message_unread:0
+#: field:crm.discount.car,message_unread:0
+#: field:crm.discount.card,message_unread:0
+msgid "Unread Messages"
+msgstr "Unread Messages"
+

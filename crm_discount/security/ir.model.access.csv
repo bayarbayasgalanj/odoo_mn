@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_crm_discount_user,crm.discount,model_crm_discount,crm_discount.group_crm_discount_user,1,0,0,0
+access_crm_discount_car_user,crm.discount.car,model_crm_discount_car,crm_discount.group_crm_discount_user,1,1,1,1
+access_crm_discount_card_user,crm.discount.card,model_crm_discount_card,crm_discount.group_crm_discount_user,1,1,1,1
+
+
+access_crm_discount_manager,crm.discount,model_crm_discount,crm_discount.group_crm_discount_manager,1,1,1,1

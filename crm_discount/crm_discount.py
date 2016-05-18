@@ -35,6 +35,7 @@ class crm_discount(osv.osv):
         'datetime': fields.datetime('Datetime', required=True),
         'sale_count': fields.float('Sale count'),
     }
+    _order = 'datetime desc'
 class crm_discount_car(osv.osv):
     _name ='crm.discount.car'
     _description = 'Crm discount car'
@@ -53,11 +54,19 @@ class crm_discount_card(osv.osv):
     }
 class res_partner(osv.osv):
     _inherit = 'res.partner'
+    def _sale_count(self, cr, uid, ids, field_name, arg, context=None):
+        res = {}
+        for partner in self.browse(cr, uid, ids, context):
+            res[partner.id] = len(partner.sale_ids)
+        return res
     _columns = {
         'car_ids': fields.many2many('crm.discount.car', 'res_partner_crm_discount_car_rel', 'partner_id','car_id', 'Car'),
         'card_ids': fields.many2many('crm.discount.card', 'res_partner_crm_discount_card_rel', 'partner_id','card_id', 'Card'),
         'is_discount': fields.boolean('Is discount', readonly=True),
-        'register': fields.char('Register', size=10)
+        'register': fields.char('Register', size=10),
+        'sale_ids': fields.one2many('crm.discount', 'partner_id', 'Sales'),
+        'sale_count': fields.function(_sale_count, string="Sales", type='integer'),
+        
     }
     def _get_discount(self, cr, uid, context=None):
         if 'custom_view' in  context:
