@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openerp>
 	<data>
-	<menuitem id="main_menu_crm_discount" name="Crm discount" sequence="10"/>
+	<menuitem id="main_menu_crm_discount" name="Crm discount" sequence="10" groups="hse.group_crm_discount"/>
         <menuitem id="menu_crm_discount" name="Crm discount" parent="main_menu_crm_discount" sequence="1"/>
             <menuitem id="menu_crm_discount_act" name="Crm discount" parent="menu_crm_discount" action="action_crm_discount"  sequence="1"/>
         <menuitem id="menu_crm_discount_conf" name="Configuration" parent="main_menu_crm_discount" sequence="3"/>
