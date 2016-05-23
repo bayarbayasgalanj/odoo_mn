@@ -3,7 +3,7 @@
 	<data>
 	<menuitem id="main_menu_crm_discount" name="Crm discount" sequence="10" groups="crm_discount.group_crm_discount_user"/>
         <menuitem id="menu_crm_discount" name="Crm discount" parent="main_menu_crm_discount" sequence="1"/>
-            <menuitem id="menu_crm_discount_act" name="Crm discount" parent="menu_crm_discount" action="action_crm_discount"  sequence="1"/>
+            <menuitem id="menu_crm_discount_sale" name="Sale" parent="menu_crm_discount" action="action_crm_discount_sale"  sequence="1"/>
         <menuitem id="menu_crm_discount_conf" name="Configuration" parent="main_menu_crm_discount" sequence="3"/>
         	<menuitem id="menu_crm_discount_partner" name="Partner" parent="menu_crm_discount_conf" action="action_partner_crm_discount"  sequence="1"/>
         	<menuitem id="menu_crm_discount_card" name="Card" parent="menu_crm_discount_conf" action="action_crm_discount_card"  sequence="5"/>

@@ -119,7 +119,7 @@
                         <div class="oe_button_box oe_right">
                             <button class="oe_inline oe_stat_button" type="action"
                                 attrs="{'invisible': [('is_discount', '=', False)]}"
-                                name="%(crm_discount.action_crm_discount)d"
+                                name="%(crm_discount.action_crm_discount_sale)d"
                                 icon="fa-money"
                                 context="{'search_default_partner_id': active_id}">
                                 <field string="Sales" name="sale_count" widget="statinfo"/>

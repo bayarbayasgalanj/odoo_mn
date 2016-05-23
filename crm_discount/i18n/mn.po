@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 8.0-20160421\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-18 03:26+0000\n"
-"PO-Revision-Date: 2016-05-18 03:26+0000\n"
+"POT-Creation-Date: 2016-05-23 02:09+0000\n"
+"PO-Revision-Date: 2016-05-23 02:09+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -68,26 +68,24 @@ msgid "Contacts"
 msgstr "Харилцагч"
 
 #. module: crm_discount
-#: field:crm.discount,create_uid:0
 #: field:crm.discount.car,create_uid:0
 #: field:crm.discount.card,create_uid:0
+#: field:crm.discount.sale,create_uid:0
 msgid "Created by"
 msgstr "Created by"
 
 #. module: crm_discount
-#: field:crm.discount,create_date:0
 #: field:crm.discount.car,create_date:0
 #: field:crm.discount.card,create_date:0
+#: field:crm.discount.sale,create_date:0
 msgid "Created on"
 msgstr "Created on"
 
 #. module: crm_discount
-#: model:ir.actions.act_window,name:crm_discount.action_crm_discount
 #: model:ir.model,name:crm_discount.model_crm_discount
 #: model:ir.module.category,name:crm_discount.module_category_crm_discount
 #: model:ir.ui.menu,name:crm_discount.main_menu_crm_discount
 #: model:ir.ui.menu,name:crm_discount.menu_crm_discount
-#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_act
 msgid "Crm discount"
 msgstr "Урамшуулал"
 
@@ -114,58 +112,58 @@ msgstr "Урамшуулал хэрэглэгч"
 #. module: crm_discount
 #: model:ir.actions.act_window,name:crm_discount.action_partner_crm_discount
 msgid "Customers"
-msgstr "Харилцагч"
+msgstr "Захиалагчид"
 
 #. module: crm_discount
-#: help:crm.discount,message_last_post:0
 #: help:crm.discount.car,message_last_post:0
 #: help:crm.discount.card,message_last_post:0
+#: help:crm.discount.sale,message_last_post:0
 msgid "Date of the last message posted on the record."
 msgstr "Date of the last message posted on the record."
 
 #. module: crm_discount
-#: view:crm.discount:crm_discount.view_crm_discount_filter
-#: field:crm.discount,datetime:0
+#: view:crm.discount.sale:crm_discount.view_crm_discount_sale_filter
+#: field:crm.discount.sale,datetime:0
 msgid "Datetime"
 msgstr "Огноо"
 
 #. module: crm_discount
-#: field:crm.discount,message_follower_ids:0
 #: field:crm.discount.car,message_follower_ids:0
 #: field:crm.discount.card,message_follower_ids:0
+#: field:crm.discount.sale,message_follower_ids:0
 msgid "Followers"
 msgstr "Followers"
 
 #. module: crm_discount
-#: view:crm.discount:crm_discount.view_crm_discount_filter
+#: view:crm.discount.sale:crm_discount.view_crm_discount_sale_filter
 msgid "Group By"
-msgstr "Бүлэглэх"
+msgstr "Group By"
 
 #. module: crm_discount
-#: help:crm.discount,message_summary:0
 #: help:crm.discount.car,message_summary:0
 #: help:crm.discount.card,message_summary:0
+#: help:crm.discount.sale,message_summary:0
 msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
 msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
 
 #. module: crm_discount
-#: field:crm.discount,id:0
 #: field:crm.discount.car,id:0
 #: field:crm.discount.card,id:0
+#: field:crm.discount.sale,id:0
 msgid "ID"
 msgstr "ID"
 
 #. module: crm_discount
-#: help:crm.discount,message_unread:0
 #: help:crm.discount.car,message_unread:0
 #: help:crm.discount.card,message_unread:0
+#: help:crm.discount.sale,message_unread:0
 msgid "If checked new messages require your attention."
 msgstr "If checked new messages require your attention."
 
 #. module: crm_discount
-#: field:crm.discount,message_is_follower:0
 #: field:crm.discount.car,message_is_follower:0
 #: field:crm.discount.card,message_is_follower:0
+#: field:crm.discount.sale,message_is_follower:0
 msgid "Is a Follower"
 msgstr "Is a Follower"
 
@@ -175,42 +173,42 @@ msgid "Is discount"
 msgstr "Урамшуулал"
 
 #. module: crm_discount
-#: field:crm.discount,message_last_post:0
 #: field:crm.discount.car,message_last_post:0
 #: field:crm.discount.card,message_last_post:0
+#: field:crm.discount.sale,message_last_post:0
 msgid "Last Message Date"
 msgstr "Last Message Date"
 
 #. module: crm_discount
-#: field:crm.discount,write_uid:0
 #: field:crm.discount.car,write_uid:0
 #: field:crm.discount.card,write_uid:0
+#: field:crm.discount.sale,write_uid:0
 msgid "Last Updated by"
 msgstr "Last Updated by"
 
 #. module: crm_discount
-#: field:crm.discount,write_date:0
 #: field:crm.discount.car,write_date:0
 #: field:crm.discount.card,write_date:0
+#: field:crm.discount.sale,write_date:0
 msgid "Last Updated on"
 msgstr "Last Updated on"
 
 #. module: crm_discount
-#: field:crm.discount,message_ids:0
 #: field:crm.discount.car,message_ids:0
 #: field:crm.discount.card,message_ids:0
+#: field:crm.discount.sale,message_ids:0
 msgid "Messages"
 msgstr "Messages"
 
 #. module: crm_discount
-#: help:crm.discount,message_ids:0
 #: help:crm.discount.car,message_ids:0
 #: help:crm.discount.card,message_ids:0
+#: help:crm.discount.sale,message_ids:0
 msgid "Messages and communication history"
 msgstr "Messages and communication history"
 
 #. module: crm_discount
-#: field:crm.discount,name:0
+#: field:crm.discount.sale,name:0
 #: view:res.partner:crm_discount.view_crm_discount_partner_form
 msgid "Name"
 msgstr "Нэр"
@@ -222,8 +220,8 @@ msgid "Number"
 msgstr "Дугаар"
 
 #. module: crm_discount
-#: view:crm.discount:crm_discount.view_crm_discount_filter
-#: field:crm.discount,partner_id:0
+#: view:crm.discount.sale:crm_discount.view_crm_discount_sale_filter
+#: field:crm.discount.sale,partner_id:0
 #: model:ir.model,name:crm_discount.model_res_partner
 #: model:ir.ui.menu,name:crm_discount.menu_crm_discount_partner
 msgid "Partner"
@@ -235,7 +233,14 @@ msgid "Register"
 msgstr "Регистр"
 
 #. module: crm_discount
-#: field:crm.discount,sale_count:0
+#: model:ir.actions.act_window,name:crm_discount.action_crm_discount_sale
+#: model:ir.model,name:crm_discount.model_crm_discount_sale
+#: model:ir.ui.menu,name:crm_discount.menu_crm_discount_sale
+msgid "Sale"
+msgstr "Борлуулалт"
+
+#. module: crm_discount
+#: field:crm.discount.sale,sale_count:0
 msgid "Sale count"
 msgstr "Борлуулалтын дүн"
 
@@ -247,22 +252,22 @@ msgid "Sales"
 msgstr "Борлуулалт"
 
 #. module: crm_discount
-#: view:crm.discount:crm_discount.view_crm_discount_filter
+#: view:crm.discount.sale:crm_discount.view_crm_discount_sale_filter
 #: view:res.partner:crm_discount.view_crm_discount_res_partner_filter
 msgid "Search Partner"
 msgstr "Харилцагч хайх"
 
 #. module: crm_discount
-#: field:crm.discount,message_summary:0
 #: field:crm.discount.car,message_summary:0
 #: field:crm.discount.card,message_summary:0
+#: field:crm.discount.sale,message_summary:0
 msgid "Summary"
 msgstr "Summary"
 
 #. module: crm_discount
-#: field:crm.discount,message_unread:0
 #: field:crm.discount.car,message_unread:0
 #: field:crm.discount.card,message_unread:0
+#: field:crm.discount.sale,message_unread:0
 msgid "Unread Messages"
 msgstr "Unread Messages"
 

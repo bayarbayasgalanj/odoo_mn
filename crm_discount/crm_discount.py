@@ -24,9 +24,9 @@ from datetime import datetime, timedelta
 from openerp.tools.translate import _
 from openerp.http import request
 
-class crm_discount(osv.osv):
-    _name ='crm.discount'
-    _description = 'Crm discount'
+class crm_discount_sale(osv.osv):
+    _name ='crm.discount.sale'
+    _description = 'Sale'
     _inherit = ["mail.thread"]
 
     _columns = {
@@ -64,7 +64,7 @@ class res_partner(osv.osv):
         'card_ids': fields.many2many('crm.discount.card', 'res_partner_crm_discount_card_rel', 'partner_id','card_id', 'Card'),
         'is_discount': fields.boolean('Is discount', readonly=True),
         'register': fields.char('Register', size=10),
-        'sale_ids': fields.one2many('crm.discount', 'partner_id', 'Sales'),
+        'sale_ids': fields.one2many('crm.discount.sale', 'partner_id', 'Sales'),
         'sale_count': fields.function(_sale_count, string="Sales", type='integer'),
         
     }

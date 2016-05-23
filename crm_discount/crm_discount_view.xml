@@ -2,9 +2,9 @@
 <openerp>
 <data>
 	<!-- CRM discount-->
-    <record id="view_crm_discount_form" model="ir.ui.view">
-        <field name="name">crm.discount.form</field>
-        <field name="model">crm.discount</field>
+    <record id="view_crm_discount_sale_form" model="ir.ui.view">
+        <field name="name">crm.discount.sale.form</field>
+        <field name="model">crm.discount.sale</field>
         <field name="type">form</field>
         <field name="arch" type="xml">
             <form>
@@ -22,9 +22,9 @@
             </form>
         </field>
     </record>
-    <record id="view_crm_discount_tree" model="ir.ui.view">
-        <field name="name">crm.discount.tree</field>
-        <field name="model">crm.discount</field>
+    <record id="view_crm_discount_sale_tree" model="ir.ui.view">
+        <field name="name">crm.discount.sale.tree</field>
+        <field name="model">crm.discount.sale</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="partner_id"/>
@@ -33,9 +33,9 @@
             </tree>
         </field>
     </record>
-    <record id="view_crm_discount_filter" model="ir.ui.view">
-        <field name="name">crm.discount.filter</field>
-        <field name="model">crm.discount</field>
+    <record id="view_crm_discount_sale_filter" model="ir.ui.view">
+        <field name="name">crm.discount.sale.filter</field>
+        <field name="model">crm.discount.sale</field>
         <field name="arch" type="xml">
             <search string="Search Partner">
                 <field name="partner_id"/>
@@ -50,9 +50,9 @@
             </search>
         </field>
     </record>
-    <record id="view_crm_discount_graph" model="ir.ui.view">
-            <field name="name">crm.discount.graph</field>
-            <field name="model">crm.discount</field>
+    <record id="view_crm_discount_sale_graph" model="ir.ui.view">
+            <field name="name">crm.discount.sale.graph</field>
+            <field name="model">crm.discount.sale</field>
             <field name="arch" type="xml">
                 <graph type="pivot">
                     <field name="partner_id"/>
@@ -60,9 +60,9 @@
                 </graph>
             </field>
         </record>
-    <record id="action_crm_discount" model="ir.actions.act_window">
-        <field name="name">Crm discount</field>
-        <field name="res_model">crm.discount</field>
+    <record id="action_crm_discount_sale" model="ir.actions.act_window">
+        <field name="name">Sale</field>
+        <field name="res_model">crm.discount.sale</field>
         <field name="context">{}</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form,graph</field>
