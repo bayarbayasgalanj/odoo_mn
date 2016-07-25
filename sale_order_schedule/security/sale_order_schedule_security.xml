@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data noupdate="0">
+    <record model="ir.module.category" id="module_category_sale_order_schedule">
+            <field name="name">Sale order schedule</field>
+            <field name="sequence">100</field>
+    </record>
+    <record id="group_sale_order_schedule_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="sale_order_schedule.module_category_sale_order_schedule"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+    
+    <record id="group_sale_order_schedule_manager" model="res.groups">
+        <field name="name">Manager</field>
+        <field name="category_id" ref="sale_order_schedule.module_category_sale_order_schedule"/>
+        <field name="implied_ids" eval="[(4, ref('sale_order_schedule.group_sale_order_schedule_user'))]"/>
+        <field name="users" eval="[(4, ref('base.user_root'))]"/>
+    </record>
+    
+</data>
+<data noupdate="0">
+</data>
+</openerp>

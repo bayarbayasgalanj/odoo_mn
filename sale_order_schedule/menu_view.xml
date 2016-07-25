@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<menuitem id="main_menu_sale_order_schedule" name="Sale order schedule" parent="base.menu_base_partner" action="action_sale_order_route" sequence="2"/>
+
+			<menuitem id="menu_sale_order_route" name="Sale order route" parent="main_menu_sale_order_schedule" action="action_sale_order_route" sequence="1"/>
+
+			<menuitem id="menu_sale_order_zone" name="Sale order zone" parent="main_menu_sale_order_schedule" action="action_sale_order_zone" sequence="3"/>
+
+			<menuitem id="menu_sale_order_schedule" name="Sale order schedule" parent="main_menu_sale_order_schedule" action="action_sale_order_schedule" sequence="5"/>
+
+	</data>    
+</openerp>

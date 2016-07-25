@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="assets_backend" name="sale order schedule" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/sale_order_schedule/static/src/css/order_schedule.css"/>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuKd729YBdS3HKtl1quWnWqKDhkNcrvIE"></script>
+                <script type="text/javascript" src="/sale_order_schedule/static/src/js/order_schedule.js"></script>
+                <script type="text/javascript" src="/sale_order_schedule/static/src/js/order_route.js"></script>
+            </xpath>
+        </template>
+    </data>
+</openerp>

@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_sale_order_schedule,sale.order.schedule,model_sale_order_schedule,sale_order_schedule.group_sale_order_schedule_user,1,0,0,0
+access_sale_order_schedule_line,sale.order.schedule.line,model_sale_order_schedule_line,sale_order_schedule.group_sale_order_schedule_user,1,0,0,0
+
+access_sale_order_schedule_manager,sale.order.schedule,model_sale_order_schedule,sale_order_schedule.group_sale_order_schedule_manager,1,1,1,1
+access_sale_order_schedule_line_manager,sale.order.schedule.line,model_sale_order_schedule_line,sale_order_schedule.group_sale_order_schedule_manager,1,1,1,1
+
+access_sale_order_route,sale.order.route,model_sale_order_route,sale_order_schedule.group_sale_order_schedule_user,1,0,0,0
+access_sale_order_zone,sale.order.zone,model_sale_order_zone,sale_order_schedule.group_sale_order_schedule_user,1,0,0,0
+
+access_sale_order_route_manager,sale.order.route,model_sale_order_route,sale_order_schedule.group_sale_order_schedule_manager,1,1,1,1
+access_sale_order_zone_manager,sale.order.zone,model_sale_order_zone,sale_order_schedule.group_sale_order_schedule_manager,1,1,1,1

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="sale_order_schedule.order_route">
+        <!-- <table style="border: 1px solid black; width: 100%" id="cor_act_image_table">
+		
+        </table> -->
+        <table>
+        	<div style="border: 1px solid; width:100%;height:500px" id="map">
+			</div>
+        </table>
+    </t>
+</templates>

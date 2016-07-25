@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+	<!-- Sale order schedule -->
+	<record id="view_sale_order_schedule_form" model="ir.ui.view">
+        <field name="name">sale.order.schedule.form</field>
+        <field name="model">sale.order.schedule</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group col="4">
+                        <field name="date"/>
+                        <field name="trade_agent"/>
+                    </group>
+                    <group col="2">
+                        <group>
+                            <field name="schedule_line" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="sequince"/>
+                                    <field name="partner_id"/>
+                                    <field name="partner_latitude"/>
+                                    <field name="partner_longitude"/>
+                                </tree>                             
+                            </field>
+                        </group>
+                        <group>
+                            <widget type="order_schedule"> </widget>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="view_sale_order_schedule_tree" model="ir.ui.view">
+        <field name="name">sale.order.schedule.tree</field>
+        <field name="model">sale.order.schedule</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date"/>
+            	<field name="trade_agent"/>
+            </tree>
+        </field>
+    </record>
+    <!-- <record model="ir.ui.view" id="hse_sale_order_schedule_kanban_view">
+        <field name="name">Hse weather kanban</field>
+        <field name="model">hse.env.weather</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_env_vignette oe_semantic_html_override">
+                        	<div>
+                        		<h4>
+	                                <a type="open">
+	                                     <field name="place_id"/> 
+	                                </a>
+	                            </h4>
+                        	</div>
+                        	<div>
+                        		<field name="date"></field>
+                        		<h4>Day</h4>
+                        	</div>
+                        	<a type="open" href="#" class="oe_kanban_action oe_kanban_action_a">
+                                <img t-att-src="kanban_image('hse.env.weather', 'day_image_small', record.id.value)"/>
+                            </a>
+                           	<div class="oe_kanban_details">
+                           		<ul>
+                                	<li><field name="day_cloud_rainy_id"></field></li>
+                                	<li><h4><field name="day_min_t"></field>..<field name="day_max_t"> &#8451;</field></h4></li>
+                                	<li><h4><field name="day_wind"></field> <field name="day_wind_min"></field>-<field name="day_wind_max"></field></h4></li>
+                                </ul>
+                           	</div>
+                            <div>
+                        		<h4>Night</h4>
+                        	</div>
+                        	<a type="open" href="#" class="oe_kanban_action oe_kanban_action_a">
+                                <img t-att-src="kanban_image('hse.env.weather', 'night_image_small', record.id.value)"/>
+                            </a>
+                           	<div class="oe_kanban_details">
+                           		<ul>
+                                	<li><field name="night_cloud_rainy_id"></field></li>
+                                	<li><h4><field name="night_min_t"></field>..<field name="night_max_t"></field> &#8451;</h4></li>
+                                	<li><h4><field name="night_wind"></field> <field name="night_wind_min"></field>-<field name="night_wind_max"></field></h4></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+    <record id="view_hse_env_weather_filter" model="ir.ui.view">
+        <field name="name">hse.env.weather.filter</field>
+        <field name="model">hse.env.weather</field>
+        <field name="arch" type="xml">
+            <search>
+            	
+                <filter name="january" string="January" domain="[('date','like',time.strftime('%%Y-01'))]"/>
+                <filter name="february" string="February" domain="[('date','like',time.strftime('%%Y-02'))]"/>
+                <filter name="march" string="March" domain="[('date','like',time.strftime('%%Y-03'))]"/>
+                <filter name="April" string="April" domain="[('date','like',time.strftime('%%Y-04'))]"/>
+                <filter name="may" string="May" domain="[('date','like',time.strftime('%%Y-05'))]"/>
+                <filter name="june" string="June" domain="[('date','like',time.strftime('%%Y-06'))]"/>
+                <filter name="july" string="July" domain="[('date','like',time.strftime('%%Y-07'))]"/>
+                <filter name="august" string="August" domain="[('date','like',time.strftime('%%Y-08'))]"/>
+                <filter name="september" string="September" domain="[('date','like',time.strftime('%%Y-09'))]"/>
+                <filter name="octomber" string="Octomber" domain="[('date','like',time.strftime('%%Y-10'))]"/>
+                <filter name="november" string="November" domain="[('date','like',time.strftime('%%Y-11'))]"/>
+                <filter name="december" string="December" domain="[('date','like',time.strftime('%%Y-12'))]"/>
+                <filter name="this_month" string="This month" domain="[('date','like',time.strftime('%%Y-%%m'))]"/>
+                <filter name="year" string="This year" domain="[('date','like',time.strftime('%%Y'))]"/>
+
+                <group expand="0">
+                	<filter string="Place" name="group_place" domain="[]" context="{'group_by':'place_id'}"/>
+                    <filter string="Year" name="group_year" domain="[]" context="{'group_by':'year'}"/>
+                    <filter string="Month" name="group_month" domain="[]" context="{'group_by':'month'}"/>
+                    <filter string="Day" name="group_day" domain="[]" context="{'group_by':'day'}"/>
+                </group>
+            </search>
+        </field>
+    </record> -->
+
+    <record id="action_sale_order_schedule" model="ir.actions.act_window">
+        <field name="name">Sale order schedule</field>
+        <field name="res_model">sale.order.schedule</field>
+        <field name="view_type">form</field>
+        <field name="context">{}</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Sale order zone -->
+    <record id="view_sale_order_zone_form" model="ir.ui.view">
+        <field name="name">sale.order.zone.form</field>
+        <field name="model">sale.order.zone</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group col="4">
+                        <field name="name"/>
+                        <field name="trade_agent"/>
+                        <field name="description"/>
+                        <field name="color"/>
+                        <field name="is_view"/>
+                    </group>
+                    <group col="2">
+                        <notebook>
+                            <page string="Partner">
+                                <field name="partner_line" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="partner_id"/>
+                                        <field name="partner_latitude" readonly="1"/>
+                                        <field name="partner_longitude" readonly="1"/>
+                                    </tree>                             
+                                </field>
+                            </page>
+                        </notebook>
+                        <notebook>
+                            <page string="Zone">
+                                <field name="lat_line" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="latitude"/>
+                                        <field name="longitude"/>
+                                    </tree>                             
+                                </field>
+                            </page>
+                        </notebook>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="view_sale_order_zone_tree" model="ir.ui.view">
+        <field name="name">sale.order.zone.tree</field>
+        <field name="model">sale.order.zone</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="trade_agent"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_sale_order_zone" model="ir.actions.act_window">
+        <field name="name">Sale order zone</field>
+        <field name="res_model">sale.order.zone</field>
+        <field name="view_type">form</field>
+        <field name="context">{}</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <!-- Sale order route -->
+    <record id="view_sale_order_route_form" model="ir.ui.view">
+        <field name="name">sale.order.route.form</field>
+        <field name="model">sale.order.route</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group col="4">
+                        <field name="name"/>
+                    </group>
+                    <separator string="Zone"/>
+                    <button name="import_zone" string="Import zone" 
+                            icon="fa-download" class="oe_stat_button oe_edit_only"
+                            type="object"/>
+                    <group>
+                        <field name="route_line" nolabel="1">
+                            <tree editable="bottom">
+                                <field name="zone_id"/>
+                                <field name="trade_agent"/>
+                                <field name="description"/>
+                                <field name="color"/>
+                                <field name="is_view"/>
+                            </tree>   
+                        </field>
+                    </group>
+                    <separator string="Map"/>
+                    <group>
+                        <widget type="order_route"> </widget>
+                    </group>
+                    
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+    <record id="view_sale_order_route_tree" model="ir.ui.view">
+        <field name="name">sale.order.route.tree</field>
+        <field name="model">sale.order.route</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_sale_order_route" model="ir.actions.act_window">
+        <field name="name">Sale order route</field>
+        <field name="res_model">sale.order.route</field>
+        <field name="view_type">form</field>
+        <field name="context">{}</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</data>
+</openerp>

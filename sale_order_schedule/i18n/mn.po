@@ -1,0 +1,490 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hse_env
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150305\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-08 00:46+0000\n"
+"PO-Revision-Date: 2016-01-08 00:46+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "April"
+msgstr "4-р сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "August"
+msgstr "8-р сар"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,biology_reclamation_area:0
+msgid "Biology reclamation area ga"
+msgstr "Биологийн нөхөн сэргээлт хийсэн талбай га"
+
+#. module: hse_env
+#: model:ir.actions.act_window,name:hse_env.action_hse_env_weather_cloud_rainy
+#: model:ir.ui.menu,name:hse_env.menu_hse_env_config_weather_cloud_rainy
+msgid "Cloud rainy"
+msgstr "Үүлшил, Хур тунадас"
+
+#. module: hse_env
+#: field:hse.env.place,create_uid:0
+#: field:hse.env.reclamation,create_uid:0
+#: field:hse.env.reclamation.line,create_uid:0
+#: field:hse.env.weather,create_uid:0
+#: field:hse.env.weather.cloud.rainy,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: hse_env
+#: field:hse.env.place,create_date:0
+#: field:hse.env.reclamation,create_date:0
+#: field:hse.env.reclamation.line,create_date:0
+#: field:hse.env.weather,create_date:0
+#: field:hse.env.weather.cloud.rainy,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,date:0
+#: field:hse.env.weather,date:0
+msgid "Date"
+msgstr "Огноо"
+
+#. module: hse_env
+#: help:hse.env.reclamation,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "Date of the last message posted on the record."
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.hse_env_weather_kanban_view
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+#: view:hse.env.weather:hse_env.view_hse_env_weather_form
+#: field:hse.env.weather,day:0
+msgid "Day"
+msgstr "Өдөр"
+
+#. module: hse_env
+#: sql_constraint:hse.env.weather:0
+msgid "Day and Place must be unique!"
+msgstr "Өдөр газар давхцахгүй!"
+
+#. module: hse_env
+#: field:hse.env.weather,day_cloud_rainy_id:0
+msgid "Day cloud rainy"
+msgstr "Өдрийн үүлшил хур тунадас"
+
+#. module: hse_env
+#: field:hse.env.weather,day_max_t:0
+msgid "Day max T"
+msgstr "Өдрийн их ℃"
+
+#. module: hse_env
+#: field:hse.env.weather,day_min_t:0
+msgid "Day min T"
+msgstr "Өдрийн бага ℃"
+
+#. module: hse_env
+#: field:hse.env.weather,day_wind:0
+msgid "Day wind"
+msgstr "Өдрийн салхи зүг"
+
+#. module: hse_env
+#: field:hse.env.weather,day_wind_max:0
+msgid "Day wind max"
+msgstr "Өдрийн их салхи"
+
+#. module: hse_env
+#: field:hse.env.weather,day_wind_min:0
+msgid "Day wind min"
+msgstr "Өдрийн бага салхи"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "December"
+msgstr "12-р сар"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,description:0
+msgid "Description"
+msgstr "Тайлбар"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,disturbed_area:0
+msgid "Disturbed area ga"
+msgstr "Хөндсөн талбай га"
+
+#. module: hse_env
+#: model:ir.ui.menu,name:hse_env.menu_hse_env
+#: model:ir.ui.menu,name:hse_env.menu_hse_env_config
+msgid "Environment"
+msgstr "Байгаль орчин"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "February"
+msgstr "2-р сар"
+
+#. module: hse_env
+#: field:hse.env.reclamation,message_follower_ids:0
+msgid "Followers"
+msgstr "Followers"
+
+#. module: hse_env
+#: model:res.groups,name:hse_env.group_hse_env_manager
+msgid "HSE Env Manager"
+msgstr "ХАБЭАБО байгаль орчны менежер"
+
+#. module: hse_env
+#: model:res.groups,name:hse_env.group_hse_env_officer
+msgid "HSE Env Officer"
+msgstr "ХАБЭАБО байгаль орчны ажилтан"
+
+#. module: hse_env
+#: help:hse.env.reclamation,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: hse_env
+#: field:hse.env.place,id:0
+#: field:hse.env.reclamation,id:0
+#: field:hse.env.reclamation.line,id:0
+#: field:hse.env.weather,id:0
+#: field:hse.env.weather.cloud.rainy,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: hse_env
+#: help:hse.env.reclamation,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: hse_env
+#: field:hse.env.weather,day_image:0
+#: field:hse.env.weather,night_image:0
+#: field:hse.env.weather.cloud.rainy,image:0
+msgid "Image"
+msgstr "Зураг"
+
+#. module: hse_env
+#: field:hse.env.weather,day_image_medium:0
+#: field:hse.env.weather,night_image_medium:0
+msgid "Image (medium)"
+msgstr "Зураг (дунд)"
+
+#. module: hse_env
+#: field:hse.env.weather,day_image_small:0
+#: field:hse.env.weather,night_image_small:0
+msgid "Image (small)"
+msgstr "Зураг (жижиг)"
+
+#. module: hse_env
+#: field:hse.env.reclamation,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "January"
+msgstr "1-р сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "July"
+msgstr "7-р сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "June"
+msgstr "6-р сар"
+
+#. module: hse_env
+#: field:hse.env.reclamation,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: hse_env
+#: field:hse.env.place,write_uid:0
+#: field:hse.env.reclamation,write_uid:0
+#: field:hse.env.reclamation.line,write_uid:0
+#: field:hse.env.weather,write_uid:0
+#: field:hse.env.weather.cloud.rainy,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: hse_env
+#: field:hse.env.place,write_date:0
+#: field:hse.env.reclamation,write_date:0
+#: field:hse.env.reclamation.line,write_date:0
+#: field:hse.env.weather,write_date:0
+#: field:hse.env.weather.cloud.rainy,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: hse_env
+#: field:hse.env.reclamation,license_number:0
+msgid "License Number"
+msgstr "Лиценз дугаар"
+
+#. module: hse_env
+#: field:hse.env.reclamation,location:0
+msgid "Location"
+msgstr "Байрлал"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "March"
+msgstr "3-р сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "May"
+msgstr "5-р сар"
+
+#. module: hse_env
+#: field:hse.env.weather.cloud.rainy,image_medium:0
+msgid "Medium-sized photo"
+msgstr "Medium-sized photo"
+
+#. module: hse_env
+#: field:hse.env.reclamation,message_ids:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: hse_env
+#: help:hse.env.reclamation,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+#: field:hse.env.weather,month:0
+msgid "Month"
+msgstr "Сар"
+
+#. module: hse_env
+#: field:hse.env.place,name:0
+#: field:hse.env.weather.cloud.rainy,name:0
+msgid "Name"
+msgstr "Нэр"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.hse_env_weather_kanban_view
+#: view:hse.env.weather:hse_env.view_hse_env_weather_form
+msgid "Night"
+msgstr "Шөнө"
+
+#. module: hse_env
+#: field:hse.env.weather,night_cloud_rainy_id:0
+msgid "Night cloud rainy"
+msgstr "Шөнийн үүлшил хур тунадас"
+
+#. module: hse_env
+#: field:hse.env.weather,night_max_t:0
+msgid "Night max T"
+msgstr "Шөнийн их ℃"
+
+#. module: hse_env
+#: field:hse.env.weather,night_min_t:0
+msgid "Night min T"
+msgstr "Шөнийн бага ℃"
+
+#. module: hse_env
+#: field:hse.env.weather,night_wind:0
+msgid "Night wind"
+msgstr "Шөнийн салхи зүг"
+
+#. module: hse_env
+#: field:hse.env.weather,night_wind_max:0
+msgid "Night wind Max"
+msgstr "Шөнийн их салхи"
+
+#. module: hse_env
+#: field:hse.env.weather,night_wind_min:0
+msgid "Night wind min"
+msgstr "Шөнийн бага салхи"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "November"
+msgstr "11-р сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "Octomber"
+msgstr "10-р сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+#: field:hse.env.weather,place_id:0
+#: model:ir.actions.act_window,name:hse_env.action_hse_env_place
+#: model:ir.ui.menu,name:hse_env.menu_hse_env_config_place
+msgid "Place"
+msgstr "Газар"
+
+#. module: hse_env
+#: field:hse.env.place,project_id:0
+msgid "Project"
+msgstr "Төсөл"
+
+#. module: hse_env
+#: view:hse.env.reclamation:hse_env.view_hse_env_reclamation_form
+#: model:ir.actions.act_window,name:hse_env.action_hse_env_reclamation
+#: model:ir.model,name:hse_env.model_hse_env_reclamation
+#: model:ir.ui.menu,name:hse_env.menu_hse_env_reclamation
+msgid "Reclamation"
+msgstr "Нөхөн сэргээлт"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,reclamation_id:0
+msgid "Reclamation ID"
+msgstr "Нөхөн сэргээлт ID"
+
+#. module: hse_env
+#: model:ir.model,name:hse_env.model_hse_env_reclamation_line
+msgid "Reclamation line"
+msgstr "Нөхөн сэргээлтийн мөр"
+
+#. module: hse_env
+#: field:hse.env.reclamation,user_id:0
+msgid "Registration"
+msgstr "Бүртгэсэн"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "September"
+msgstr "9-р сар"
+
+#. module: hse_env
+#: field:hse.env.weather.cloud.rainy,image_small:0
+msgid "Smal-sized photo"
+msgstr "Smal-sized photo"
+
+#. module: hse_env
+#: help:hse.env.reclamation,sum_biology_reclamation_area:0
+#: help:hse.env.reclamation,sum_technic_reclamation_area:0
+msgid "Sum"
+msgstr "Нийт"
+
+#. module: hse_env
+#: field:hse.env.reclamation,message_summary:0
+msgid "Summary"
+msgstr "Нийт"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,technic_reclamation_area:0
+msgid "Technic reclamation area ga"
+msgstr "Техникийн нөхөн сэргээлт хийсэн талбай га"
+
+#. module: hse_env
+#: field:hse.env.reclamation,notes:0
+msgid "Terms and Conditions"
+msgstr "Terms and Conditions"
+
+#. module: hse_env
+#: view:hse.env.reclamation:hse_env.view_hse_env_reclamation_form
+msgid "Terms and conditions..."
+msgstr "Terms and conditions..."
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "This month"
+msgstr "Энэ сар"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+msgid "This year"
+msgstr "Энэ жил"
+
+#. module: hse_env
+#: field:hse.env.reclamation,sum_biology_reclamation_area:0
+msgid "Total biology reclamation"
+msgstr "Нийт биологийн нөхөн сэргээлт хийсэн га"
+
+#. module: hse_env
+#: field:hse.env.reclamation,sum_technic_reclamation_area:0
+msgid "Total technic reclamation"
+msgstr "Нийт техникийн нөхөн сэргээлт хийсэн га"
+
+#. module: hse_env
+#: field:hse.env.reclamation,message_unread:0
+msgid "Unread Messages"
+msgstr "Unread Messages"
+
+#. module: hse_env
+#: field:hse.env.reclamation.line,used_topsoil:0
+msgid "Used topsoil m3"
+msgstr "Хэрэглсэн шимт хөрс м3"
+
+#. module: hse_env
+#: model:ir.actions.act_window,name:hse_env.action_hse_env_weather
+#: model:ir.model,name:hse_env.model_hse_env_weather
+#: model:ir.ui.menu,name:hse_env.menu_hse_env_config_weather
+#: model:ir.ui.menu,name:hse_env.menu_hse_env_weather
+msgid "Weather"
+msgstr "Цаг агаар"
+
+#. module: hse_env
+#: model:ir.model,name:hse_env.model_hse_env_place
+msgid "Weather Place"
+msgstr "Цаг агаар газар"
+
+#. module: hse_env
+#: model:ir.model,name:hse_env.model_hse_env_weather_cloud_rainy
+msgid "Weather cloud rainy"
+msgstr "Цаг агаар үүлшил хур тунадас"
+
+#. module: hse_env
+#: field:hse.env.reclamation,website_message_ids:0
+msgid "Website Messages"
+msgstr "Website Messages"
+
+#. module: hse_env
+#: help:hse.env.reclamation,website_message_ids:0
+msgid "Website communication history"
+msgstr "Website communication history"
+
+#. module: hse_env
+#: view:hse.env.weather:hse_env.view_hse_env_weather_filter
+#: field:hse.env.weather,year:0
+msgid "Year"
+msgstr "Жил"
+
+#. module: hse_env
+#: selection:hse.env.weather,day_wind:0
+#: selection:hse.env.weather,night_wind:0
+msgid "bh"
+msgstr "бх"
+
+#. module: hse_env
+#: selection:hse.env.weather,day_wind:0
+#: selection:hse.env.weather,night_wind:0
+msgid "bu"
+msgstr "бө"
+
+#. module: hse_env
+#: field:hse.env.reclamation,reclamation_line:0
+msgid "unknown"
+msgstr "unknown"
+
+#. module: hse_env
+#: selection:hse.env.weather,day_wind:0
+#: selection:hse.env.weather,night_wind:0
+msgid "zh"
+msgstr "зх"
+
+#. module: hse_env
+#: selection:hse.env.weather,day_wind:0
+#: selection:hse.env.weather,night_wind:0
+msgid "zu"
+msgstr "зө"
+
